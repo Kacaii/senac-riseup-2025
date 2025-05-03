@@ -1,0 +1,14 @@
+body {
+  background-color: #f4f6fa;
+}
+
+.card h6 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.card h2 {
+  font-weight: bold;
+}
+
