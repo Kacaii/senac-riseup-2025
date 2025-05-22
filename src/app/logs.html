@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    #status-filter {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: none;
+      background-color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="logo">🏷️</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="logs.html">Logs</a>
+      <a href="requisicoes.html">Requisições</a>
+    </nav>
+    <a href="#" class="logout">⏻ Sair</a>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <h1>Logs</h1>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span style="font-size: 14px; color: #666;">usuário68 🔍</span>
+        <select id="status-filter" class="btn-gray">
+          <option value="all">Todos os status</option>
+          <option value="HTTP 200">HTTP 200</option>
+          <option value="Error 4XX">Error 4XX</option>
+          <option value="Error 5XX">Error 5XX</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="logs-section">
+      <div class="logs-header">
+        <h3>Hoje 🔄</h3>
+      </div>
+
+      <table class="logs-table">
+        <thead>
+          <tr>
+            <th>Msg</th>
+            <th>Status</th>
+            <th>Ordem</th>
+            <th>Ativo</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- (20+ linhas infladas com diferentes status para teste visual) -->
+          <tr class="log-row yellow-line">
+            <td>Dados enviados para a operação qq538840v21</td>
+            <td>Error 4XX</td>
+            <td>k9D8reN</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row yellow-line">
+            <td>BLK - Objeto vindo no report do subscribe</td>
+            <td>Error 4XX</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row gray-line">
+            <td>Pedido para executar o subscribe</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row green-line">
+            <td>Executado o Subscribe para salvar Dados da ordem</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row yellow-line">
+            <td>BLK - Objeto vindo no report do subscribe</td>
+            <td>Error 4XX</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row gray-line">
+            <td>Pedido para executar o subscribe</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row green-line">
+            <td>Executado o Subscribe para salvar Dados da ordem</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row yellow-line">
+            <td>Dados enviados para a operação qq538840v21</td>
+            <td>Error 4XX</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row gray-line">
+            <td>Pedido para executar o subscribe</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <tr class="log-row green-line">
+            <td>Executado o Subscribe para salvar Dados da ordem</td>
+            <td>HTTP 200</td>
+            <td>BBAS3</td>
+            <td>BBAS3</td>
+            <td>04 Abr, 12:30:45</td>
+          </tr>
+          <!-- Você pode duplicar ou ajustar conforme necessário -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    const currentPath = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.sidebar nav a').forEach(link => {
+      const linkPath = link.getAttribute('href');
+      if (linkPath === currentPath) {
+        link.classList.add('active');
+      }
+    });
+
+    // Filtro de status
+    const filterSelect = document.getElementById('status-filter');
+    const rows = document.querySelectorAll('.logs-table tbody tr');
+
+    filterSelect.addEventListener('change', () => {
+      const selectedStatus = filterSelect.value;
+
+      rows.forEach(row => {
+        const statusCell = row.children[1].textContent.trim();
+        if (selectedStatus === 'all' || statusCell === selectedStatus) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
