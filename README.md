@@ -1,1 +1,0 @@
-# senac-riseup-2025
