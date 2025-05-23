@@ -8,40 +8,9 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div class="container">
-  <!-- Barra de Navegação Lateral -->
-  <aside class="sidebar">
-    <img src="logo-bb.png" alt="Logo Banco do Brasil" class="sidebar-logo" />
-    <nav class="sidebar__nav">
-      <a class="sidebar__link" href="#">Dashboard</a>
-      <a class="sidebar__link" href="#">Logs</a>
-      <a class="sidebar__link" href="#">Requisições</a>
-    </nav>
-  </aside>
-
-  <!-- DashBoard Principal -->
+  <app-bb-sidebar class="sidebar-component"></app-bb-sidebar>
   <main class="dashboard">
-    <section class="card-list">
-      <div class="card">
-        <h2 class="card__title">HTTP 200</h2>
-        <p class="card__number-green">560</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Error 4XX</h2>
-        <p class="card__number-orange">28</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Error 5XX</h2>
-        <p class="card__number-yellow">5</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Timeout</h2>
-        <p class="card__number-gray">9</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Total de requisições</h2>
-        <p class="card__number-black">602</p>
-      </div>
-    </section>
+    <app-card-list class="card-list-component"></app-card-list>
   </main>
 </div>
 
