@@ -1,16 +1,40 @@
+.container {
+  display: flex;
+  background-color: white;
+}
+
 .sidebar {
   height: 100vh;
-  width: fit-content;
-  padding: 2rem;
-  background-color: midnightblue;
+  min-width: 300px;
+  padding: 1rem;
+  background-color: var(--bb-dark-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-logo {
+  place-self: center;
   width: 100px;
   height: 100px;
 }
 
 .sidebar__nav {
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
+  place-content: center;
+}
+
+.sidebar__link {
+  width: auto;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.sidebar__link:hover {
+  background-color: var(--bb-bright-blue);
+  border-radius: 0.5rem;
 }
