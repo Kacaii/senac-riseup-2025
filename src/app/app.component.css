@@ -1,2 +1,16 @@
-main {
+.sidebar {
+  height: 100vh;
+  width: fit-content;
+  padding: 2rem;
+  background-color: midnightblue;
+}
+
+.sidebar-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
 }
