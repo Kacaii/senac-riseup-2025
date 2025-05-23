@@ -1,11 +1,12 @@
 .container {
+  height: 100vh;
   display: flex;
   background-color: white;
 }
 
 .sidebar {
-  height: 100vh;
-  min-width: 300px;
+  height: 100%;
+  width: 300px;
   padding: 1rem;
   background-color: var(--bb-dark-color);
   display: flex;
@@ -14,13 +15,12 @@
 
 .sidebar-logo {
   place-self: center;
-  width: 100px;
-  height: 100px;
+  width: 33%;
 }
 
 .sidebar__nav {
   height: 100%;
-  width: 100%;
+  width: auto;
   gap: 1rem;
   display: flex;
   flex-direction: column;
