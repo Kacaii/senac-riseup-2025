@@ -1,4 +1,9 @@
 .container {
+  margin: 1rem;
   display: flex;
   gap: 1rem;
+}
+
+.graph-wrapper {
+  width: 60%;
 }
