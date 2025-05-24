@@ -6,8 +6,12 @@
 }
 
 .graph-wrapper {
-  width: 74%;
+  width: 65%;
 }
 
 .recent-logs-wrapper {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex-grow: 1;
 }
