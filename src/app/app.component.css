@@ -1,7 +1,7 @@
 @import "./css/dashboard.css";
 
 .container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   background-color: white;
 }
