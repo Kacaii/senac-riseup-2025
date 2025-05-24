@@ -2,8 +2,12 @@
   margin: 1rem;
   display: flex;
   gap: 1rem;
+  height: auto;
 }
 
 .graph-wrapper {
-  width: 60%;
+  width: 74%;
+}
+
+.recent-logs-wrapper {
 }
