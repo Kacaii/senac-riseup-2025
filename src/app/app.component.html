@@ -1,159 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="app.component.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  
-  <aside class="sidebar">
-    <div class="logo">
-      <img src="public/logo-bb.png" alt="Logo Banco do Brasil" class="logo-img">
-    </div>
-    <nav>
-      <a href="app.component.html">Dashboard</a>
-      <a href="logs.html">Logs</a>
-      <a href="requisicoes.html">Requisições</a>
-    </nav>
-    <a href="#" class="logout">⏻ Sair</a>
-  </aside>
- <!--Não sei pq mas declarar a main como main está gerando erro, se você está lendo isso é porque a solução implementada foi declarar a main como DIV-->>
-  <main class="main">
-    <header class="header">
-      <h1>Visão geral</h1>
-      <span class="user">usuário68 🔍</span>
-    </header>
-
-    <section class="cards">
-      <div class="card"><h2>HTTP 200</h2><p class="green">560</p></div>
-      <div class="card"><h2>Error 4XX</h2><p class="orange">28</p></div>
-      <div class="card"><h2>Error 5XX</h2><p class="yellow">5</p></div>
-      <div class="card"><h2>Timeout</h2><p class="gray">9</p></div>
-      <div class="card"><h2>Total de requisições</h2><p>602</p></div>
-    </section>
-
-    <div class="chart-transactions">
-      <section class="chart">
-        <div class="chart-header">
-          <div class="title-btns">
-            <h3>Requisições de hoje</h3>
-            <div>
-              <button class="btn-blue">Error 5XX</button>
-              <button class="btn-gray" id="abrir-filtros">Filtrar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="filtros" id="filtros">
-          <div class="filtros-inner">
-            <h2>AQUI FICARÃO OS FILTROS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dignissimos ad sit alias vero cumque excepturi commodi tempora exercitationem officiis eligendi veniam placeat dolorem odit inventore, sint sed nam reiciendis?</p>
-            <button class="fechar-filtros" id="fechar-filtros">Fechar</button>
-          </div>
-        </div>
-
-        <div class="chart-inner">
-          <!--<canvas id="barChart"></canvas> -->
-          <canvas id="lineChart"></canvas>
-        </div>
-      </section>
-      <!-- Essa section mostrar os serviços -->
-      <section class="transactions">
-        <h3>Últimas transações</h3>
-        <table style="width: 100%; border-spacing: 0 10px;">
-          <thead>
-            <tr>
-              <th style="text-align: left;">ATIVO</th>
-              <th>QTD</th>
-              <th>PREÇO</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>BBAS3</strong></td><td>100</td><td>R$ 56,00</td></tr>
-            <tr><td><strong>BBAS3</strong></td><td>78</td><td>R$ 74,00</td></tr>
-            <tr><td><strong>BBAS3</strong></td><td>90</td><td>R$ 32,55</td></tr>
-            <tr><td><strong>BBAS3</strong></td><td>105</td><td>R$ 65,75</td></tr>
-            <tr><td><strong>BBAS3</strong></td><td>65</td><td>R$ 82,90</td></tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
-
-    <section class="recent-logs">
-      <div class="logs-header">
-        <h3>Logs Recentes</h3>
-      </div>
-
-      <table class="logs-recentes-table">
-        <thead>
-          <tr>
-            <th>Msg</th>
-            <th>Status</th>
-            <th>Ordem</th>
-            <th>Ativo</th>
-            <th>Data</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- (20+ linhas infladas com diferentes status para teste visual) -->
-          <tr class="log-row yellow-line">
-            <td>Dados enviados para a operação qq538840v21</td>
-            <td>Error 4XX</td>
-            <td>k9D8reN</td>
-            <td>BBAS3</td>
-            <td>04 Abr, 12:30:45</td>
-          </tr>
-          <tr class="log-row yellow-line">
-            <td>BLK - Objeto vindo no report do subscribe</td>
-            <td>Error 4XX</td>
-            <td>BBAS3</td>
-            <td>BBAS3</td>
-            <td>04 Abr, 12:30:45</td>
-          </tr>
-          <tr class="log-row gray-line">
-            <td>Pedido para executar o subscribe</td>
-            <td>HTTP 200</td>
-            <td>BBAS3</td>
-            <td>BBAS3</td>
-            <td>04 Abr, 12:30:45</td>
-          </tr>
-          <tr class="log-row yellow-line">
-            <td>BLK - Objeto vindo no report do subscribe</td>
-            <td>Error 4XX</td>
-            <td>BBAS3</td>
-            <td>BBAS3</td>
-            <td>04 Abr, 12:30:45</td>
-          </tr>
-          <tr class="log-row gray-line">
-            <td>Pedido para executar o subscribe</td>
-            <td>HTTP 200</td>
-            <td>BBAS3</td>
-            <td>BBAS3</td>
-            <td>04 Abr, 12:30:45</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+<div class="container">
+  <app-bb-sidebar class="sidebar-component"></app-bb-sidebar>
+  <main class="dashboard">
+    <app-dashboard-top class="dashboard-top-component"></app-dashboard-top>
+    <app-card-list class="card-list-component"></app-card-list>
+    <app-dashboard-wrapper></app-dashboard-wrapper>
   </main>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
-  <script>
-    // Ativa automaticamente o item da sidebar com base no nome do arquivo
-    const currentPath = window.location.pathname.split('/').pop();
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-    document.querySelectorAll('.sidebar nav a').forEach(link => {
-      const linkPath = link.getAttribute('href');
-      if (linkPath === currentPath) {
-        link.classList.add('active');
-      }
-    });
-  </script>
-</body>
-</html>
-
+<router-outlet />

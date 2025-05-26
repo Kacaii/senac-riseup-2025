@@ -1,0 +1,17 @@
+.container {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  height: auto;
+}
+
+.graph-wrapper {
+  width: 65%;
+}
+
+.recent-logs-wrapper {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex-grow: 1;
+}

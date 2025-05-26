@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "senac_riseup_2025": {
+    "senac-riseup-2025": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/senac_riseup_2025",
+            "outputPath": "dist/senac-riseup-2025",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "senac_riseup_2025:build:production"
+              "buildTarget": "senac-riseup-2025:build:production"
             },
             "development": {
-              "buildTarget": "senac_riseup_2025:build:development"
+              "buildTarget": "senac-riseup-2025:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,8 +97,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "63c06d80-bfa2-4e13-841a-677a1b2cc669"
   }
 }

@@ -1,0 +1,23 @@
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+tr,
+td {
+  padding: 0.5rem;
+}
+
+table thead {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
