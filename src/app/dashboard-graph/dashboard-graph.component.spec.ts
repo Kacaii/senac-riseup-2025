@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { DashboardGraphComponent } from './dashboard-graph.component';
+import { DashboardGraphComponent } from "./dashboard-graph.component";
 
-describe('DashboardGraphComponent', () => {
+describe("DashboardGraphComponent", () => {
   let component: DashboardGraphComponent;
   let fixture: ComponentFixture<DashboardGraphComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DashboardGraphComponent]
+      imports: [DashboardGraphComponent],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DashboardGraphComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

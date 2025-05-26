@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { DashboardRecentLogsComponent } from './dashboard-recent-logs.component';
+import { DashboardRecentLogsComponent } from "./dashboard-recent-logs.component";
 
-describe('DashboardRecentLogsComponent', () => {
+describe("DashboardRecentLogsComponent", () => {
   let component: DashboardRecentLogsComponent;
   let fixture: ComponentFixture<DashboardRecentLogsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DashboardRecentLogsComponent]
+      imports: [DashboardRecentLogsComponent],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DashboardRecentLogsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
