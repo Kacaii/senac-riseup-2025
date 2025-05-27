@@ -1,0 +1,34 @@
+.container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttons .buttons__error {
+  background-color: var(--bb-bright-blue);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.buttons .buttons__filter {
+  background-color: lightgray;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
