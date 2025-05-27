@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "reset.css";
+
+:root {
+  --bb-dark-color: #1c1f26;
+  --bb-bright-blue: #4265ff;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
