@@ -1,0 +1,19 @@
+<div class="logs-container">
+  <h2>Logs do Sistema</h2>
+  <table class="logs-table">
+    <thead>
+      <tr>
+        <th>Data/Hora</th>
+        <th>Nível</th>
+        <th>Mensagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{ log.timestamp }}</td>
+        <td>{{ log.level }}</td>
+        <td>{{ log.message }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
