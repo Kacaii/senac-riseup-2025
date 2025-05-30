@@ -37,4 +37,5 @@
 .sidebar__link.active {
   background-color: #3b82f6; /* ou a cor de destaque desejada */
   color: white;
+  border-radius: 0.5rem;
 }
