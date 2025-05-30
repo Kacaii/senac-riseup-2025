@@ -10,9 +10,103 @@ import { CommonModule } from '@angular/common';
 })
 export class LogsComponent {
   logs = [
-    { timestamp: '2025-05-28 14:23:11', level: 'ERROR', message: 'Falha ao acessar banco de dados.' },
-    { timestamp: '2025-05-28 14:24:01', level: 'INFO', message: 'Usuário admin acessou o painel.' },
-    { timestamp: '2025-05-28 14:25:45', level: 'WARN', message: 'Tentativa de login inválida detectada.' },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
+    {
+      msg: 'Dados enviados para operação XXXXXXX',
+      status: 'Error 4XX',
+      ordem: 'k9d8rs',
+      ativo: 'BBAS3',
+      data: '2025-03-03 13:12:11',
+    },
   ];
 }
-

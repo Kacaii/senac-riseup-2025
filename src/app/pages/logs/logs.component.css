@@ -7,21 +7,24 @@
 .logs-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
-.logs-table th, .logs-table td {
-  border: 1px solid #ccc;
+.logs-table thead tr th {
+  background-color: white;
+}
+
+.logs-table th,
+.logs-table td {
+  margin: 0.5rem;
   padding: 0.75rem;
   text-align: left;
+  background-color: #f5f6f9;
+  border-top: 1rem solid white;
 }
 
 .logs-table th {
   background-color: #f5f5f5;
-}
-
-.logs-table tr:nth-child(even) {
-  background-color: #f9f9f9;
 }
 
 .logs-table tr:hover {
