@@ -1,0 +1,46 @@
+h2{
+  font-size: 24px;
+}
+
+.logs-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  border-spacing: 0 12px;
+}
+
+.logs-table thead tr th {
+  background-color: white;
+
+}
+
+.logs-table th,
+.logs-table td {
+  margin: 0.5rem;
+  padding: 0.75rem;
+  text-align: left;
+  background-color: #f5f6f9;
+  border-top: 1rem solid white;
+  border-radius: 6px;
+  vertical-align: middle; 
+}
+
+
+.logs-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+  color: #999;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.logs-table tr:hover {
+  background-color: #eef;
+}

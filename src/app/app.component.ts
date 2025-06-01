@@ -1,22 +1,17 @@
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
-import { BbSidebarComponent } from "./bb-sidebar/bb-sidebar.component";
-import { CardListComponent } from "./card-list/card-list.component";
-import { DashboardTopComponent } from "./dashboard-top/dashboard-top.component";
-import { DashboardWrapperComponent } from "./dashboard-wrapper/dashboard-wrapper.component";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { BbSidebarComponent } from './bb-sidebar/bb-sidebar.component';
 
 @Component({
-  selector: "app-root",
+  selector: 'app-root',
+  standalone: true,
   imports: [
     RouterOutlet,
-    BbSidebarComponent,
-    CardListComponent,
-    DashboardTopComponent,
-    DashboardWrapperComponent,
+    BbSidebarComponent, // <- IMPORTANTE!
   ],
-  templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css",
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = "senac-riseup-2025";
+  title = 'senac-riseup-2025';
 }

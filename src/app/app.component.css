@@ -9,3 +9,16 @@
 .sidebar-component {
   height: 100%;
 }
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1rem;
+}

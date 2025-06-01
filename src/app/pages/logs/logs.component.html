@@ -1,0 +1,23 @@
+<div class="logs-container">
+  <h2>Hoje 🔁</h2>
+  <table class="logs-table">
+    <thead>
+      <tr>
+        <th>MSG</th>
+        <th>Status</th>
+        <th>Ordem</th>
+        <th>Ativo</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{ log.msg }}</td>
+        <td>{{ log.status }}</td>
+        <td>{{ log.ordem }}</td>
+        <td>{{ log.ativo }}</td>
+        <td>{{ log.data }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
