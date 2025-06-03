@@ -1,59 +1,64 @@
-# SenacRiseup2025
+# Senac RiseUp 2025
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+**Senac RiseUp 2025** é uma aplicação web desenvolvida com Angular, focada em fornecer uma visualização eficiente e organizada de logs de transações relacionadas ao mercado de trabalho. O projeto foi idealizado para atender a uma demanda do Banco do Brasil quanto à análise e monitoramento dessas transações via dashboard.
 
-## Development server
+## 🚀 Funcionalidades
 
-To start a local development server, run:
+- 📊 Dashboard interativo com indicadores e métricas relevantes
+- 📄 Tela de logs para visualização detalhada das transações
+- 🔎 Filtros e buscas inteligentes
+- 💾 Armazenamento e processamento eficiente de dados
+
+## 🛠️ Tecnologias Utilizadas
+
+- [Angular 19](https://angular.io/)
+- TypeScript
+- HTML/CSS
+- Bootstrap (ou outro framework de UI, se aplicável)
+
+## 📂 Estrutura do Projeto
+
+```bash
+senac-riseup-2025/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+├── angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+## ▶️ Como Executar
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Inicie o servidor de desenvolvimento:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+3. Acesse a aplicação em: `http://localhost:4200/`
 
-## Code scaffolding
+## 🧪 Testes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para rodar os testes unitários:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 🤝 Contribuições
 
-For end-to-end (e2e) testing, run:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-```bash
-ng e2e
-```
+## 📄 Licença
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto é de uso acadêmico e institucional. Direitos reservados ao Senac e aos autores envolvidos.
