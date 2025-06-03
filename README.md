@@ -44,6 +44,10 @@ npm install
 ```bash
 ng serve
 ```
+ou
+```bash
+npm start
+```
 
 3. Acesse a aplicação em: `http://localhost:4200/`
 
